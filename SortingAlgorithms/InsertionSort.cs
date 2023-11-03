@@ -3,7 +3,7 @@
     public class InsertionSort : ICustomSort
     {
         // Метод сортировка вставками.
-        public static void SortArray(double[] array)
+        public void SortArray(double[] array)
         {
             double currentElement;
             int index;
@@ -22,7 +22,7 @@
         }
 
         // метод меняющий два элемента массива местами.
-        static void Swap(double[] array, int indexOne, int jindexTwo)
+        void Swap(double[] array, int indexOne, int jindexTwo)
         {
             double temp = array[indexOne];
             array[indexOne] = array[jindexTwo];

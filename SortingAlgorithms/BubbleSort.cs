@@ -3,7 +3,7 @@
     public class BubbleSort : ICustomSort
     {
         // Метод пузырьковой сортировки.
-        public static void SortArray(double[] array)
+        public void SortArray(double[] array)
         {
             for (int i = 0; i < array.Length; i++)
             {

@@ -6,7 +6,7 @@
         {
             int arrayLength = 0;
             Console.WriteLine("Enter array length: ");
-            return arrayLength = Int32.Parse(Console.ReadLine()); // Пользователь вводит длину массива.
+            return arrayLength = int.Parse(Console.ReadLine()); // Пользователь вводит длину массива.
         }
         public static void SortinSelection(double[] array)
         {
@@ -16,11 +16,13 @@
             {
                 case "1":
                     Console.WriteLine("Array after sorting \"BubbleSort\": ");
-                    BubbleSort.SortArray(array); // Пузырьковая сортировка.
+                    ICustomSort bubbleSort = new BubbleSort();
+                    bubbleSort.SortArray(array); // Пузырьковая сортировка.
                     break;
                 case "2":
                     Console.WriteLine("Array after sorting \"InsertionSort\": ");
-                    InsertionSort.SortArray(array); // Сортировка вставками.
+                    ICustomSort insertionSort = new InsertionSort();
+                    insertionSort.SortArray(array); // Сортировка вставками.
                     break;
                 default:
                     Console.WriteLine("You entered an incorrect value");

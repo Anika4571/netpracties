@@ -1,7 +1,7 @@
 ﻿namespace SortingAlgorithms
 {
-    internal interface ICustomSort
+    interface ICustomSort
     {
-
+        void SortArray(double[] array);
     }
 }

@@ -2,7 +2,7 @@
 {
     public class QuickSort : ICustomSort
     {
-        public static void SortArray(double[] array)
+        public void SortArray(double[] array)
         {
 
         }
